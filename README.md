@@ -68,4 +68,46 @@ public static void main(String[] args) {
       }
 ````
 ### İki boyutlu sayısal  bir dizide satırların toplamını veren  programı yazınız.
+public class donguler {
+public static void main(String[] args) {
+    
+    int a[][]={{1,2,3,4},
+               {6,4,23,12},
+               {45,37,81,86}
+              };
+    
+           for(int i=0;i<a.length;i++){ 
+               int toplam=0;
+               for(int j=0;j<a[i].length;j++){
+                  toplam+=a[i][j]; 
+               }System.out.println(i+". satırın toplamı:"+toplam);
+               
+           }
+      
+     
+          
+}
+      }
+````
+### 10 elemanlı string dizisi içinde en uzun stringi ve uzunluğunu bulan program
+````
+public class donguler {
+public static void main(String[] args) {
+    
+    String a[]={"Ali","Mustafa","Fatih","Furkan","Ahmet","Serdar","Cemal","Esra","Evindar","Ozan"};
+           int en_uzun=0;
+           String deger=null;
+           
+           for(int i=0;i<a.length;i++){
+               if(a[i].length()>en_uzun){
+                   en_uzun=a[i].length();
+                   deger=a[i];
+                   
+               }
+           }System.out.println("Bu dizideki en uzun string:"+deger+" dir ve uzunlugu "+en_uzun+" dir.");
+     
+          
+}
+      }
+    
 ````
