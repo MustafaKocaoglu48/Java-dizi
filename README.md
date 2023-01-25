@@ -137,3 +137,29 @@ public static void main(String[] args) {
                                  +kalan_sayisi+" kadar öğrencide kaldı.");
       
 ````
+### Girilmiş olan bir dizideki asal sayıları bulup ekrana yazan ve kaç adet olduğunu yazan programı yazınız.
+````
+public class donguler {
+public static void main(String[] args) {
+    
+    int a[]={23,45,65,78,54,60,87,43,19,7,5};
+    int sayac=0;
+    int asal_sayac=0;
+          for(int i=0;i<a.length;i++){
+              sayac=0;
+              for(int j=2;j<a[i];j++){
+                 
+                  if(a[i]%j==0){
+                      sayac++;
+                      
+                  }
+                    }if(sayac==0){
+                      System.out.println(a[i]+" asal bir sayıdır.");
+                      asal_sayac++;
+                  }
+              }
+         System.out.println("Toplam "+asal_sayac+" tane asal sayı vardır");
+   }
+      
+  }
+````
