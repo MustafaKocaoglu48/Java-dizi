@@ -163,3 +163,32 @@ public static void main(String[] args) {
       
   }
 ````
+### Bir diziyi sola doğru kaydıran programı yaznız.
+````
+public class donguler {
+public static void main(String[] args) {
+    
+    int a[]={23,45,65,78,54,60,87,43,19,7,5};
+          int gecici_deger;    
+          
+          System.out.println("Dizinin sola döndürülmeden önceki hali:");
+          for(int i=0;i<a.length;i++){
+              System.out.println(a[i]);
+          }
+           for(int i=0;i<a.length-1;i++){
+          
+        
+                  gecici_deger=a[i+1];               
+               a[i+1]=a[i];
+               a[i]=gecici_deger;
+           }
+            System.out.println("Sola doğru kaydırılan dizinin yeni hali:");
+           for(int i=0;i<a.length;i++){
+               System.out.println(a[i]);
+           }
+         
+    }
+      
+  }
+
+````
