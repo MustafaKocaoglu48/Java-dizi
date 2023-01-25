@@ -68,6 +68,7 @@ public static void main(String[] args) {
       }
 ````
 ### İki boyutlu sayısal  bir dizide satırların toplamını veren  programı yazınız.
+````
 public class donguler {
 public static void main(String[] args) {
     
