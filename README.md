@@ -111,3 +111,28 @@ public static void main(String[] args) {
       }
     
 ````
+### Vize notu girilmiş olan bir a dizisi ve final notu girilmiş bir b dizisinde geçen ve kalan toplam öğrenci sayısını veren program.
+````
+import java.util.Scanner;
+
+public class donguler {
+public static void main(String[] args) {
+    
+    int a[]={23,45,65,78,54,60,87};
+    int b[]={65,23,65,12,98,45,35};
+      
+         int gecen_sayisi=0;
+         int kalan_sayisi=0;
+         for(int i=0;i<a.length;i++){
+             if(b[i]<50){
+                 kalan_sayisi++;
+             }else{
+                double c=a[i]*0.4+b[i]*0.6;
+                if(c>=50){
+                    gecen_sayisi++;
+                }
+             }   
+         }System.out.println("Bu öğrencilerden "+gecen_sayisi+" kadar öğrenci geçti ve "
+                                 +kalan_sayisi+" kadar öğrencide kaldı.");
+      
+````
